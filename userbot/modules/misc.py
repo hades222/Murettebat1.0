@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# Asena UserBot - Yusuf Usta
+# Turhan UserBot - Yusuf Usta
 
 
 """ Birkaç küçük komutu içeren UserBot modülü. """
@@ -59,18 +59,6 @@ async def sleepybot(time):
         await time.edit("`Günaydın!`")
 
 
-@register(outgoing=True, pattern="^.shutdown$")
-async def shutdown(event):
-    """ .shutdown komutu botu kapatır. """
-    await event.edit("`Görüşürüz... *Windows XP kapanma sesi*`")
-    if BOTLOG:
-        await event.client.send_message(BOTLOG_CHATID, "#SHUTDOWN \n"
-                                        "Bot kapatıldı.")
-    try:
-        await bot.disconnect()
-    except:
-        pass
-
 
 @register(outgoing=True, pattern="^.restart$")
 async def restart(event):
@@ -87,21 +75,6 @@ async def restart(event):
     execl(sys.executable, sys.executable, *sys.argv)
 
 
-@register(outgoing=True, pattern="^.support$")
-async def bot_support(wannahelp):
-    """ .support komutu destek grubumuzu verir. """
-    await wannahelp.edit("[Buradan](http://t.me/AsenaSupport) destek grubumuza ulaşabilirsiniz.")
-
-
-@register(outgoing=True, pattern="^.creator$")
-async def creator(e):
-    await e.edit("Bu bot \n"
-                 "[Yusuf Usta](https://t.me/Qulec) tarafından geliştirilmiştir. \n")
-
-
-@register(outgoing=True, pattern="^.readme$")
-async def reedme(e):
-    await e.edit("[Asena README.md](https://github.com/quiec/AsenaUserBot/blob/seden/README.md)")
 
 
 # Copyright (c) Gegham Zakaryan | 2019
@@ -118,11 +91,6 @@ async def repeat(rep):
 
     await rep.edit(replyText)
 
-
-@register(outgoing=True, pattern="^.repo$")
-async def repo_is_here(wannasee):
-    """ .repo komutunun tek yaptığı şey GitHub repomuzun bağlantısını vermek. """
-    await wannasee.edit("[Asena Repo](https://github.com/quiec/asenauserbot)")
 
 
 @register(outgoing=True, pattern="^.raw$")
@@ -161,33 +129,8 @@ CMD_HELP.update({
 \nKullanım: Seden de bir insan, o da yoruluyor. Ara sıra biraz uyumasına izin ver.'
 })
 
-CMD_HELP.update({
-    "shutdown":
-    ".shutdown\
-\nKullanım: Bazen canın botunu kapatmak ister. Gerçekten o nostaljik\
-Windows XP kapanış sesini duyabileceğini zannedersin..."
-})
 
-CMD_HELP.update(
-    {'support': ".support\
-\nKullanım: Yardıma ihtiyacın olursa bu komutu kullan."
-     })
 
-CMD_HELP.update({
-    'repo':
-    '.repo\
-\nKullanım: Seden UserBot GitHub reposu'
-})
-
-CMD_HELP.update({
-    "readme":
-    ".readme\
-\nKullanım: Asena botunun GitHub'daki README.md dosyasına giden bir bağlantı."
-})
-
-CMD_HELP.update(
-    {"creator": ".creator\
-\nKullanım: Bu güzel botu kimlerin oluşturduğunu öğren :-)"})
 
 CMD_HELP.update({
     "repeat":
