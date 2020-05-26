@@ -412,7 +412,42 @@ async def univsaye(cowmsg):
     cheese = cheese()
 
     await cowmsg.edit(f"`{cheese.milk(text).replace('`', '´')}`")
-
+                
+@register(outgoing=True, pattern="^.plane")
+async def port_plane(event):
+    if event.fwd_from:
+        return
+        
+        
+    await event.edit("✈-------------")
+    await asyncio.sleep(1)
+    await event.edit("-✈------------")
+    await asyncio.sleep(1)
+    await event.edit("--✈-----------")
+    await asyncio.sleep(1)
+    await event.edit("---✈----------")
+    await asyncio.sleep(1)
+    await event.edit("----✈---------")
+    await asyncio.sleep(1)
+    await event.edit("-----✈--------")
+    await asyncio.sleep(1)
+    await event.edit("------✈-------")
+    await asyncio.sleep(1)
+    await event.edit("-------✈------")
+    await asyncio.sleep(1)
+    await event.edit("--------✈-----")
+    await asyncio.sleep(1)
+    await event.edit("---------✈----")
+    await asyncio.sleep(1)
+    await event.edit("----------✈---")
+    await asyncio.sleep(1)
+    await event.edit("-----------✈--")
+    await asyncio.sleep(1)
+    await event.edit("------------✈-")
+    await asyncio.sleep(1)
+    await event.edit("-------------✈")
+    await asyncio.sleep(5)
+    await event.delete()
 
 @register(outgoing=True, pattern="^:/$", ignore_unsafe=True)
 async def kek(keks):
