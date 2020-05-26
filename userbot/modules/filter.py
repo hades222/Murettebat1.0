@@ -53,7 +53,7 @@ async def add_new_filter(new_handler):
 
     if '"' in mesj:
         keyword = re.findall(r"\"(.*)\"", mesj)[0]
-        string = re.findall(r"\s\S*$", mesj)[0]
+        string = re.findall(r"\"\s\S*.\s\S*", mesj)[0].replace('" ', "")
     else:
         keyword = new_handler.pattern_match.group(1)
         string = new_handler.text.partition(keyword)[2]
