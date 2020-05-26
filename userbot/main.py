@@ -31,9 +31,9 @@ connect("learning-data-root.check").close()
 try:
     bot.start()
     idim = bot.get_me().id
-    asenabl = requests.get('https://gitlab.com/Quiec/asen/-/raw/master/asen.json').json()
-    if idim in asenabl:
-        bot.disconnect()
+    #asenabl = requests.get('https://gitlab.com/Quiec/asen/-/raw/master/asen.json').json()
+    #if idim in asenabl:
+      #  bot.disconnect()
 
     if PLUGIN_CHANNEL_ID != None:
         print("Pluginler Yükleniyor")
