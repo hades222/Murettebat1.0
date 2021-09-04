@@ -48,11 +48,11 @@ botclone() {
     cd ~
     echo "Cloning bot sources..."
     if [ -z "$bot_clone" ]; then
-        git clone https://github.com/XNulI/turhanuserbot -b turhanuserbot
+        git clone https://github.com/hades222/Murettebat1.0 -b Murettebat1.0
         save_prog "bot_clone"
     fi
     echo "DONE!!"
-    cd turhanuserbot
+    cd Murettebat1.0
 }
 
 # Requirement install function
@@ -125,7 +125,7 @@ LOGGER=$LOGGER
 LOGGER_GROUP=$LOGGER_GROUP
 OPEN_WEATHER_MAP_APPID=$OPEN_WEATHER_MAP_APPID
 DATABASE_URL=$DB_URI" >> config.env
-    sudo mv config.env ~/turhanuserbot
+    sudo mv config.env ~/Murettebat1.0
     save_prog "gen_conf"
     fi
     echo "DONE!!"
