@@ -42,7 +42,7 @@ try:
             DOGRU = 1
         except:
             KanalId = "me"
-            bot.send_message("me", "`Plugin_Channel_Id'iniz geçersiz. Pluginler kalıcı olmuyacak.`")
+            bot.send_message("me", "`Plugin_Channel_Id'iniz geçersiz. Pluginler kalıcı olmayacak.`")
             DOGRU = 0
 
         for plugin in bot.iter_messages(KanalId, filter=InputMessagesFilterDocument):
@@ -85,8 +85,8 @@ for module_name in ALL_MODULES:
     imported_module = import_module("userbot.modules." + module_name)
 
 LOGS.info("Botunuz çalışıyor! Herhangi bir sohbete .alive yazarak Test edin."
-          " Yardıma ihtiyacınız varsa, Destek grubumuza gelin t.me/turhanuserbotsupport")
-LOGS.info("Bot sürümünüz Turhan v1")
+          " Yardıma ihtiyacınız varsa, Destek grubumuza gelin t.me/Murettebatsupport")
+LOGS.info("Bot sürümünüz Murettebatv1")
 
 """
 if len(argv) not in (1, 3, 4):
