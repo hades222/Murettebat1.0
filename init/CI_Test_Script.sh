@@ -38,7 +38,7 @@ test_run() {
 
 tg_senderror() {
     tg_sendinfo "<code>Build Throwing Error(s)</code>" \
-        "@baalajimaestro @raphielscape @MrYacha please look in!" \
+        "@hades222 please look in!" \
         "Logs: https://semaphoreci.com/baalajimaestro/telegram-userbot"
 
     [ -n "${STATUS}" ] &&
