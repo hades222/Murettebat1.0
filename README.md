@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="![image]https://imgyukle.com/f/2021/09/04/W0qSj.gif" width="200" height="200">
+  <img src="https://imgyukle.com/f/2021/09/04/W0qSj.gif" width="200" height="200">
   <h1>Murettebat UserBot</h1>
 </div>
 <p align="center">
