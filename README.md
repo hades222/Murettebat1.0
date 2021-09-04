@@ -15,31 +15,20 @@
 ### Basit Yöntem
 Eğer botu kurma hakkında fikriniz yoksa burayı okuyunuz: [Kurulum Rehberi](https://github.com/XNulI/turhanuserbot/wiki/Kurulum/)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/XNulI/turhanuserbot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/hades222/Murettebat1.0)
 ### Zor Yöntem
 ```python
-git clone https://github.com/XNulI/turhanuserbot.git
-cd turhanuserbot
+git clone https://github.com/hades222/Murettebat1.0.git
+cd Vetouserbot
 pip install -r requirements.txt
 # Config.env oluşturun ve düzenleyin. #
 python3 main.py
 ```
  
-Herhangi bir istek & şikâyet & öneri varsa [destek grubuna](https://t.me/turhanuserbotsupport) ulaşabilirsiniz.
+Herhangi bir istek & şikâyet & öneri varsa [destek grubuna](https://t.me/Murettebatsupport) ulaşabilirsiniz.
 
 ```
     Userbottan dolayı; Telegram hesabınız yasaklanabilir.
-    Bu bir açık kaynaklı projedir, yaptığınız her işlemden kendiniz sorumlusunuz. Kesinlikle Turhan yöneticileri sorumluluk kabul etmemektedir.
-    Turhanı kurarak bu sorumlulukları kabul etmiş sayılırsınız.
+    Bu bir açık kaynaklı projedir, yaptığınız her işlemden kendiniz sorumlusunuz. Kesinlikle Murettebat yöneticileri sorumluluk kabul etmemektedir.
+    Murettebat kurarak bu sorumlulukları kabul etmiş sayılırsınız.
 ```
-
-## Credit
-Thanks for;
-
-[RaphielGang for creating Telegram-Userbot](https://github.com/RaphielGang)
-
-[Tdug Team for Translations](https://github.com/TeamDerUntergang)
-
-[Spechide for Inline Bot Plugin](https://github.com/Spechide)
-
-Developing with [Asena](https://github.com/Quiec/AsenaUserBot)
