@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# Turhan UserBot - Yusuf Usta
+# Turhan UserBot - Göktuğ T***
 
 """ UserBot başlangıç noktası """
 import importlib
